@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Arriojas Project 02</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Splash screen with content warning + Start button -->
+  <div class="splash">
+    <p>Welcome! The following site contains mentions of alcohol and randomly selected gifs of drinking. Please adhere to
+      your local laws and bylaws and remember to <br><span class="bold">DRINK RESPONSIBLY</span>!
+    </p>
+    <button class="start">Go forth</button>
+  </div>
+
+<!-- Start of "content" div that is initially hidden -->
+  <div class="content contentShow">
+<!-- Header content with introduction and inputs -->
+    <header>
+      <div class="text">
+        <!-- Intro text & title (non dynamic) -->
+        <h1>Alphabetized Alcohols</h1>
+        <p>Sometimes all we need is a little inspiration to get the night started.</p>
+        <p>Pick a letter and then choose from the list of cocktails that belong to that letter! </p>
+        <p>Still feeling indecisive? Click the dice to have the app choose for you!</br><span class="bold">Please imbibe with caution</span></p>
+
+        <!-- Input section to choose letter for drinks -->
+        <form class="inputForm">
+          <label for="letterPicked">Choose your letter:</label>
+          <input type="text" name="letterPicked" id="letterPicked" style="text-transform: uppercase;">
+          <input type="submit" name="letterPicked" value="Choose" class="submitButton">
+          <!-- Randomize button with hover text effect in div -->
+          <div class="hover">
+            <input type="image" src="./assets/randomize.png" alt="randomize button" class="randomButton">
+            <span class="hovertext">Random Letter!</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Dynamic GIF section, will change on every action -->
+      <div class="gifSection">
+        <img src="" alt="" class="drinkGif">
+      </div>
+    </header>
+
+<!-- Main dynamic section where drinks will populate -->
+    <main class="drinkContainer">
+      <!-- dynamic content goes here -->
+    </main>
+
+<!-- Footer with credits to Juno + API -->
+    <footer>
+      <div class="line"> </div>
+      <p>
+        Data courtesy of the
+        <a href="https://www.thecocktaildb.com/api.php">The Cocktail DB API</a>
+      </p>
+      <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
+    </footer>
+
+<!-- End of "content" div -->
+  </div>
+
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
