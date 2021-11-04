@@ -33,7 +33,7 @@ alphaAlcs.giphyApiKey = "bT4cKp5t3W32Z0y3nvvnDyW6I3neAsH2"
 //   AJAX call for Giphy to obtain "alcohol" related GIF
 alphaAlcs.retrieveGif = function () {
     $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search",
+        url: "https//api.giphy.com/v1/gifs/search",
         method: "GET",
         dataType: "json",
         data: {
