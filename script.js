@@ -28,7 +28,7 @@ alphaAlcs.arrayRandomizer = (array) => {
 }
 
 //  Saving Giphy API key
-alphaAlcs.giphyApiKey = "h9v2xpVBa5rBj5TBDQcivSpdFZ4FGgzz"
+alphaAlcs.giphyApiKey = "bT4cKp5t3W32Z0y3nvvnDyW6I3neAsH2"
 
 //   AJAX call for Giphy to obtain "alcohol" related GIF
 alphaAlcs.retrieveGif = function () {
@@ -37,8 +37,7 @@ alphaAlcs.retrieveGif = function () {
         method: "GET",
         dataType: "json",
         data: {
-            // api_key: alphaAlcs.giphyApiKey,
-            api_key: h9v2xpVBa5rBj5TBDQcivSpdFZ4FGgzz,
+            api_key: alphaAlcs.giphyApiKey,
             q: "alcohol"
         }
     }).then(function (gifData) {
