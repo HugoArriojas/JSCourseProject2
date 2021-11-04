@@ -37,7 +37,8 @@ alphaAlcs.retrieveGif = function () {
         method: "GET",
         dataType: "json",
         data: {
-            api_key: alphaAlcs.giphyApiKey,
+            // api_key: alphaAlcs.giphyApiKey,
+            api_key: h9v2xpVBa5rBj5TBDQcivSpdFZ4FGgzz,
             q: "alcohol"
         }
     }).then(function (gifData) {
