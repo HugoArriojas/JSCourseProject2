@@ -11,3 +11,5 @@ The API used is courtesy of TheCocktailDb found here: https://www.thecocktaildb.
 This app is very much unfinished, so if you want to check out some of my more completed programs, please check them out at https://www.hugoa.dev/
 
 Thank you for checking out my repo!
+
+Live Link: alphabetizedalcohols.netlify.app
